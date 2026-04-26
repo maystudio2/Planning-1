@@ -89,7 +89,6 @@
             color: #475569;
             margin-bottom: 15px;
         }
-        /* 1000x600 비율에 맞춘 이미지 컨테이너 (약 5:3 비율) */
         .ref-image-container {
             width: 100%;
             aspect-ratio: 1000 / 600;
@@ -101,11 +100,6 @@
             align-items: center;
             justify-content: center;
             position: relative;
-        }
-        .ref-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
         
         @media print {
@@ -128,7 +122,7 @@
     <!-- Page 1: 프로젝트 개요 -->
     <article class="paper">
         <header>
-            <div class="badge">제작 기획안 v2.9</div>
+            <div class="badge">제작 기획안 v3.2</div>
             <h1 class="text-4xl font-black text-slate-950 leading-[1.3] tracking-tight">
                 2026 경남 청년 <br>성공&성장 스토리 콘테스트 <br>홍보 영상 제작 기획안
             </h1>
@@ -176,10 +170,10 @@
         </section>
     </article>
 
-    <!-- Page 2: 인물별 콜라주 컨셉 & 레퍼런스 -->
+    <!-- Page 2: 인물별 컨셉 및 레퍼런스 -->
     <article class="paper">
         <section>
-            <h2>2. 인물별 콜라주 컨셉</h2>
+            <h2>2. 인물별 콜라주 컨셉 & 레퍼런스</h2>
             <div class="overflow-hidden border border-slate-200 rounded-2xl shadow-sm mb-12">
                 <table>
                     <thead class="bg-slate-50">
@@ -194,7 +188,7 @@
                                 <p class="font-black text-lg">인물 1 (사천)</p>
                                 <p class="text-blue-600 font-bold">우주항공 연구원</p>
                             </td>
-                            <td>연구실 모니터 앞 미소. 화면 정지 후 <strong>별자리, 행성 스티커, 정밀 수식 로켓 드로잉, 'KAI' 레터링</strong> 등 콜라주.</td>
+                            <td>연구실 모니터 앞 미소. 화면 정지 후 <strong>별자리, 행성 스티커, 정밀 수식 로켓 드로잉, 'AERO SPACE' 타이포</strong> 등 콜라주.</td>
                         </tr>
                         <tr>
                             <td class="text-center border-r border-slate-100">
@@ -221,26 +215,25 @@
                 <div class="grid grid-cols-2 gap-6">
                     <div class="flex flex-col gap-3">
                         <div class="ref-image-container">
-                            <img src="image1.png" alt="레퍼런스 이미지 1" onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-slate-400 bg-slate-50 w-full h-full\'><svg xmlns=\'http://www.w3.org/2000/svg\' class=\'h-8 w-8 mb-2\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'#\' /></svg><span class=\'text-xs font-bold\'>image1.png (1000x600)</span><span class=\'text-[10px] mt-1\'>하이틴 콜라주 스타일</span></div>'">
+                            <div class='flex flex-col items-center justify-center p-6 text-slate-400 bg-slate-50 w-full h-full'><svg xmlns='http://www.w3.org/2000/svg' class='h-8 w-8 mb-2' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z' /></svg><span class='text-xs font-bold'>레퍼런스 이미지 01</span><span class='text-[10px] mt-1'>하이틴 미드 오프닝 스타일</span></div>
                         </div>
-                        <p class="text-xs text-slate-500 text-center font-medium">참고 01: 하이틴 미드 오프닝 스타일</p>
+                        <p class="text-xs text-slate-500 text-center font-medium">참고 01: 프리즈 프레임 및 타이포그래피</p>
                     </div>
                     <div class="flex flex-col gap-3">
                         <div class="ref-image-container">
-                            <img src="image2.png" alt="레퍼런스 이미지 2" onerror="this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center p-6 text-slate-400 bg-slate-50 w-full h-full\'><svg xmlns=\'http://www.w3.org/2000/svg\' class=\'h-8 w-8 mb-2\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'#\' /></svg><span class=\'text-xs font-bold\'>image2.png (1000x600)</span><span class=\'text-[10px] mt-1\'>다꾸 그래픽 스타일</span></div>'">
+                            <div class='flex flex-col items-center justify-center p-6 text-slate-400 bg-slate-50 w-full h-full'><svg xmlns='http://www.w3.org/2000/svg' class='h-8 w-8 mb-2' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z' /></svg><span class='text-xs font-bold'>레퍼런스 이미지 02</span><span class='text-[10px] mt-1'>다꾸 콜라주 그래픽 스타일</span></div>
                         </div>
-                        <p class="text-xs text-slate-500 text-center font-medium">참고 02: 인물별 커스텀 그래픽 연출</p>
+                        <p class="text-xs text-slate-500 text-center font-medium">참고 02: 인물별 맞춤형 스티커 그래픽</p>
                     </div>
                 </div>
             </div>
-            <p class="mt-10 text-sm text-slate-400 italic text-center">* 위 레퍼런스의 '프리즈 프레임 후 그래픽 팝업' 형식을 각 인물 특성에 맞춰 커스텀 제작함.</p>
         </section>
     </article>
 
     <!-- Page 3: 상세 구성안 -->
     <article class="paper">
         <section>
-            <h2>3. 상세 구성안 (인물별 시퀀스)</h2>
+            <h2>3. 상세 구성안 (60초 시퀀스)</h2>
             <div class="overflow-hidden border border-slate-200 rounded-2xl shadow-sm">
                 <table class="border-t-2 border-slate-900">
                     <thead class="bg-slate-900 text-white">
@@ -254,32 +247,44 @@
                         <tr>
                             <td class="text-center font-black text-blue-600 border-r border-slate-100">00~05s</td>
                             <td class="font-bold">인트로: 다이어리 오프닝</td>
-                            <td>실제 다이어리가 휘리릭 넘어가며 펼쳐짐.<br>(NA) "우리들의 진짜 이야기가 시작됩니다."</td>
+                            <td>실제 다이어리가 휘리릭 넘어가며 펼쳐짐.<br>(나레이션) "우리들의 진짜 이야기가 시작됩니다."</td>
                         </tr>
                         <tr>
                             <td class="text-center font-black border-r border-slate-100">05~20s</td>
-                            <td><strong>Case 01: 연구원</strong><br>데이터 분석 중 카메라 발견 후 미소. 화면 정지 및 우주 컨셉 콜라주 팝업.</td>
-                            <td>(연구원) "경남의 하늘은 제 꿈을 우주까지 확장시켜주는 무대예요."</td>
+                            <td><strong>Case 01: 연구원 (사천)</strong><br>데이터 분석 중 카메라 발견 후 미소. 화면 정지 및 우주 테마 콜라주 팝업.</td>
+                            <td>
+                                (나레이션) "땅 위에서 우주를 꿈꾸는 우리 동네 연구원님!"<br>
+                                (연구원) "경남의 하늘은 제 꿈을 우주까지 확장시켜주는 무대예요."<br>
+                                <span class="text-xs font-bold text-slate-500">[성함 / 사천 / 우주항공 분야 청년]</span>
+                            </td>
                         </tr>
                         <tr>
                             <td class="text-center font-black border-r border-slate-100">20~35s</td>
-                            <td><strong>Case 02: 농부</strong><br>새싹 들판에서 작업 중 고개 들기. 화면 정지 및 자연 테마 콜라주 연출.</td>
-                            <td>(농부) "정직한 땀방울이 경남의 미래를 만드는 혁신이 됩니다."</td>
+                            <td><strong>Case 02: 농부 (진주/미정)</strong><br>새싹 들판에서 작업 중 고개 들기. 화면 정지 및 자연 테마 콜라주 연출.</td>
+                            <td>
+                                (나레이션) "대지의 가치를 일구는 혁신 농부님도 있죠!"<br>
+                                (농부) "정직한 땀방울이 경남의 미래를 만드는 혁신이 됩니다."<br>
+                                <span class="text-xs font-bold text-slate-500">[성함 / 미정 / 농업 혁신가]</span>
+                            </td>
                         </tr>
                         <tr>
                             <td class="text-center font-black bg-blue-50/20 border-r border-slate-100">35~50s</td>
                             <td class="bg-blue-50/20">
-                                <strong>Case 03: 김소미 대표</strong><br>
+                                <strong>Case 03: 김소미 대표 (통영)</strong><br>
                                 일상 속 고양이를 돌보다 활짝 웃는 순간 화면 정지 및 감성 콜라주.
                             </td>
                             <td class="bg-blue-50/20">
-                                (소미) "콘테스트로 저를 더 깊이 이해하게 됐어요. 저만의 브랜드를 만드니 경남도 더 사랑하게 됐죠."
+                                (소미) "콘테스트로 저를 더 깊이 이해하게 됐어요. 저만의 브랜드를 만드니 찾아오는 분도 늘고, 경남도 더 사랑하게 됐죠."<br>
+                                <span class="text-xs font-bold text-pink-600">[김소미 / 1회 우승자]</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="text-center font-black border-r border-slate-100">50~60s</td>
                             <td class="font-bold">엔딩: 참여 안내</td>
-                            <td>세 인물의 콜라주 페이지가 다이어리 속에 합쳐지며 공고 노출.<br>(NA) "지금 당신의 일기를 채워보세요!"</td>
+                            <td>
+                                세 인물의 콜라주 페이지가 다이어리 속에 합쳐지며 공고 노출.<br>
+                                (나레이션) "이제 당신의 일기장을 채울 차례입니다. 지금 도전하세요!"
+                            </td>
                         </tr>
                     </tbody>
                 </table>
