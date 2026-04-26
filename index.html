@@ -110,11 +110,32 @@
             font-weight: bold;
         }
         .highlight-blue { color: #2563eb; font-weight: 700; }
+        
+        /* PDF 인쇄 및 출력 최적화 스타일 */
         @media print {
-            body { background: white; padding: 0; margin: 0; }
-            .paper { box-shadow: none; margin: 0; width: 100%; padding: 60px 80px; }
-            .no-print { display: none; }
-            .page-break { page-break-before: always; }
+            @page {
+                size: A4;
+                margin: 0; /* 브라우저 머리글/바닥글 제거 */
+            }
+            body { 
+                background: white; 
+                padding: 0; 
+                margin: 0; 
+            }
+            .paper { 
+                box-shadow: none; 
+                margin: 0; 
+                width: 100%; 
+                padding: 60px 80px; 
+                min-height: auto;
+                page-break-after: always;
+            }
+            .paper:last-child {
+                page-break-after: auto;
+            }
+            .no-print { 
+                display: none; 
+            }
         }
     </style>
 </head>
@@ -207,7 +228,7 @@
     </article>
 
     <!-- Page 2: Storyboard & Timeline -->
-    <article class="paper page-break">
+    <article class="paper">
         <header class="mb-12">
             <h2 class="mb-0 border-none before:hidden text-3xl p-0 font-black">3. 상세 구성안 (60초 시퀀스)</h2>
         </header>
@@ -274,7 +295,7 @@
     </article>
 
     <!-- Page 3: Schedule -->
-    <article class="paper page-break">
+    <article class="paper">
         <header class="mb-16">
             <h2 class="mb-0 border-none before:hidden text-3xl p-0 font-black">4. 추진 일정</h2>
         </header>
@@ -284,7 +305,7 @@
                 <div class="step-item">
                     <div class="step-number">1</div>
                     <p class="text-sm font-bold">기획 및 섭외</p>
-                    <p class="text-xs text-blue-600 font-bold">4월 5주 (현재)</p>
+                    <p class="text-xs text-blue-600 font-bold">4월 4주 (현재)</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
@@ -316,7 +337,7 @@
                         <tr>
                             <td class="font-bold text-center">촬영 실시</td>
                             <td class="text-center">5/4 ~ 5/10</td>
-                            <td>사천(연구원), 진주(농부), 통영(김소미) 현장 촬영 및 인터뷰</td>
+                            <td>사천(연구원), 미정(농부), 통영(김소미) 현장 촬영 및 인터뷰</td>
                         </tr>
                         <tr>
                             <td class="font-bold text-center">편집 및 납품</td>
