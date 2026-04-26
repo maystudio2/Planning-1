@@ -89,17 +89,21 @@
             color: #475569;
             margin-bottom: 15px;
         }
-        .ref-frame {
-            border: 2px dashed #cbd5e1;
+        .ref-image-container {
+            width: 100%;
+            height: 280px;
+            background-color: #f8fafc;
             border-radius: 12px;
             overflow: hidden;
-            background-color: #f8fafc;
-            height: 250px;
+            border: 1px solid #e2e8f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #94a3b8;
-            font-weight: 500;
+        }
+        .ref-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         @media print {
@@ -119,9 +123,10 @@
         </button>
     </div>
 
+    <!-- Page 1: 프로젝트 개요 -->
     <article class="paper">
         <header>
-            <div class="badge">제작 기획안 v2.8</div>
+            <div class="badge">제작 기획안 v2.9</div>
             <h1 class="text-4xl font-black text-slate-950 leading-[1.3] tracking-tight">
                 2026 경남 청년 <br>성공&성장 스토리 콘테스트 <br>홍보 영상 제작 기획안
             </h1>
@@ -169,6 +174,7 @@
         </section>
     </article>
 
+    <!-- Page 2: 인물별 콜라주 컨셉 & 레퍼런스 -->
     <article class="paper">
         <section>
             <h2>2. 인물별 콜라주 컨셉</h2>
@@ -186,7 +192,7 @@
                                 <p class="font-black text-lg">인물 1 (사천)</p>
                                 <p class="text-blue-600 font-bold">우주항공 연구원</p>
                             </td>
-                            <td>연구실 모니터 앞에서 고개를 돌려 웃을 때 멈춤. 주변에 <strong>별자리, 행성 스티커, 정밀 수식 로켓 드로잉</strong> 등 콜라주.</td>
+                            <td>연구실 모니터 앞 미소. 화면 정지 후 <strong>별자리, 행성 스티커, 정밀 수식 로켓 드로잉, 'KAI' 레터링</strong> 등 콜라주.</td>
                         </tr>
                         <tr>
                             <td class="text-center border-r border-slate-100">
@@ -208,27 +214,28 @@
                 </table>
             </div>
 
-            <div class="mt-4">
+            <div>
                 <span class="label mb-4">비주얼 레퍼런스 (하이틴 & 콜라주 무드)</span>
                 <div class="grid grid-cols-2 gap-6">
                     <div class="flex flex-col gap-3">
-                        <div class="ref-frame">
-                            이미지 레퍼런스 01 (종이 찢기/텍스트 배치)
+                        <div class="ref-image-container">
+                            <img src="image1.png" alt="레퍼런스 이미지 1" onerror="this.parentElement.innerHTML='<span class=\'text-slate-400 text-xs text-center p-4\'>[image1.png 업로드 필요]<br>하이틴/종이질감 스타일</span>'">
                         </div>
-                        <p class="text-xs text-slate-500 text-center font-medium">종이 질감의 프레임과 자연스러운 텍스트 오버레이</p>
+                        <p class="text-xs text-slate-500 text-center font-medium">참고 01: 종이 찢기 및 텍스트 레이아웃</p>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <div class="ref-frame">
-                            이미지 레퍼런스 02 (스티커/드로잉 요소)
+                        <div class="ref-image-container">
+                            <img src="image2.png" alt="레퍼런스 이미지 2" onerror="this.parentElement.innerHTML='<span class=\'text-slate-400 text-xs text-center p-4\'>[image2.png 업로드 필요]<br>다꾸/드로잉 스타일</span>'">
                         </div>
-                        <p class="text-xs text-slate-500 text-center font-medium">화사한 색감의 드로잉 소스와 캐릭터 태그 활용</p>
+                        <p class="text-xs text-slate-500 text-center font-medium">참고 02: 캐릭터 태그 및 드로잉 요소</p>
                     </div>
                 </div>
             </div>
-            <p class="mt-10 text-sm text-slate-400 italic text-center">* 위 레퍼런스의 <strong>'프리즈 프레임 후 그래픽 팝업'</strong> 형식을 각 인물 특성에 맞춰 커스텀 제작함.</p>
+            <p class="mt-10 text-sm text-slate-400 italic text-center">* 위 레퍼런스의 '프리즈 프레임 후 그래픽 팝업' 형식을 각 인물 특성에 맞춰 커스텀 제작함.</p>
         </section>
     </article>
 
+    <!-- Page 3: 상세 구성안 -->
     <article class="paper">
         <section>
             <h2>3. 상세 구성안 (인물별 시퀀스)</h2>
@@ -261,7 +268,7 @@
                             <td class="text-center font-black bg-blue-50/20 border-r border-slate-100">35~50s</td>
                             <td class="bg-blue-50/20">
                                 <strong>Case 03: 김소미 대표</strong><br>
-                                일상 리얼리티 속에서 고양이를 돌보다 활짝 웃는 순간 화면 정지 및 감성 콜라주.
+                                일상 속 고양이를 돌보다 활짝 웃는 순간 화면 정지 및 감성 콜라주.
                             </td>
                             <td class="bg-blue-50/20">
                                 (소미) "콘테스트로 저를 더 깊이 이해하게 됐어요. 저만의 브랜드를 만드니 경남도 더 사랑하게 됐죠."
